@@ -17,7 +17,7 @@ const chapters = [
 export default function Home() {
   const router = useRouter();
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: green, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '1rem', color: white }}>
+    <div style={{ minHeight: '100vh', backgroundColor: lightBlue, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '1rem', color: white }}>
       <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '2rem' }}>أسئلة كيميائية للصف الثالث الثانوي</h1>
       <button style={{ fontSize: '1.25rem', padding: '1rem 2rem', borderRadius: '1rem', backgroundColor: white, color: '#0070f3', fontWeight: 'bold', cursor: 'pointer' }} onClick={() => router.push("/chapters")}>
         اضغط هنا لبدء الأسئلة
@@ -29,7 +29,7 @@ export default function Home() {
 export function ChaptersPage() {
   const router = useRouter();
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: green, padding: '1.5rem', color: white }}>
+    <div style={{ minHeight: '100vh', backgroundColor: lightBlue, padding: '1.5rem', color: white }}>
       <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1.5rem', textAlign: 'center' }}>اختر الباب</h2>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', maxWidth: '600px', margin: '0 auto' }}>
         {chapters.map((chapter) => (
@@ -51,7 +51,7 @@ export function ChapterPage({ chapterId }) {
     router.push(`/questions/${chapterId}/${type}`);
   };
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: green, padding: '1.5rem', textAlign: 'center', color: white }}>
+    <div style={{ minHeight: '100vh', backgroundColor: lightBlue, padding: '1.5rem', textAlign: 'center', color: white }}>
       <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '2rem' }}>اختر نوع الأسئلة</h2>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
         <button onClick={() => handleClick("theory")} style={{ padding: '0.75rem 1.5rem', fontSize: '1rem', fontWeight: 'bold', borderRadius: '1rem', backgroundColor: white, color: '#0070f3', border: 'none' }}>أسئلة نظرية</button>
@@ -121,7 +121,7 @@ function QuestionRenderer({ questions }) {
   const q = questions[current];
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#cce4ff', padding: '1.5rem', textAlign: 'center', color: 'white' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#4169E1', padding: '1.5rem', textAlign: 'center', color: 'white' }}>
       <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '1rem' }}>سؤال {current + 1}</h2>
       <p style={{ marginBottom: '1.5rem', fontSize: '1.2rem', fontWeight: 'bold' }}>{q.q}</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
