@@ -1,1 +1,0 @@
-export { ChaptersPage as default } from '../src/Home';
