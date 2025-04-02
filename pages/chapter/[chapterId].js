@@ -4,8 +4,9 @@ import { ChapterPage } from '../../src/Home';
 export default function ChapterRoute() {
   const router = useRouter();
 
+  // مهم جدًا علشان ما يرندرش الصفحة قبل ما يجهز chapterId
   if (!router.isReady || !router.query.chapterId) {
-    return null; // أو ممكن تعرضي رسالة تحميل: <p>جارٍ التحميل...</p>
+    return <div style={{ padding: '2rem', textAlign: 'center' }}>جاري تحميل الصفحة...</div>;
   }
 
   return <ChapterPage chapterId={router.query.chapterId} />;
