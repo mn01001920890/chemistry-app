@@ -1,1 +1,0 @@
-export { Chapter1Theory as default } from '../../../src/Home';
