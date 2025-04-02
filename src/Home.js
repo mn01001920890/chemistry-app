@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
-const lightBlue = "#cce4ff";
+const lightBlue = "#5353ec";
 const white = "#ffffff";
 
 const chapters = [
@@ -205,7 +205,7 @@ function QuestionRenderer({ questions }) {
 
   if (current >= questions.length) {
     return (
-      <div style={{ padding: '1.5rem', textAlign: 'center', backgroundColor: '#cce4ff', color: 'white', minHeight: '100vh' }}>
+      <div style={{ padding: '1.5rem', textAlign: 'center', backgroundColor: '#5353ec', color: 'white', minHeight: '100vh' }}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>تم الانتهاء من جميع الأسئلة 🎉</h2>
         <button onClick={() => router.push("/")} style={{ marginTop: '1.5rem', padding: '0.75rem 1.5rem', fontWeight: 'bold', backgroundColor: 'white', color: '#0070f3', border: 'none', borderRadius: '1rem' }}>العودة للرئيسية</button>
       </div>
@@ -215,7 +215,7 @@ function QuestionRenderer({ questions }) {
   const q = questions[current];
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#cce4ff', padding: '1.5rem', textAlign: 'center', color: 'white' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#5353ec', padding: '1.5rem', textAlign: 'center', color: 'white' }}>
       <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '1rem' }}>سؤال {current + 1}</h2>
       <p style={{ marginBottom: '1.5rem', fontSize: '1.2rem', fontWeight: 'bold' }}>{q.q}</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
