@@ -51,7 +51,7 @@ export function ChapterPage({ chapterId }) {
     router.push(`/questions/${chapterId}/${type}`);
   };
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: lightBlue, padding: '1.5rem', textAlign: 'center', color: white }}>
+    <div style={{ minHeight: '100vh', backgroundColor: #5F9EA0, padding: '1.5rem', textAlign: 'center', color: white }}>
       <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '2rem' }}>اختر نوع الأسئلة</h2>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
         <button onClick={() => handleClick("theory")} style={{ padding: '0.75rem 1.5rem', fontSize: '1rem', fontWeight: 'bold', borderRadius: '1rem', backgroundColor: white, color: '#0070f3', border: 'none' }}>أسئلة نظرية</button>
