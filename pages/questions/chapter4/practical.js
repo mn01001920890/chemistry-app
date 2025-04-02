@@ -1,0 +1,1 @@
+export { Chapter4Practical as default } from '../../../src/Home';
