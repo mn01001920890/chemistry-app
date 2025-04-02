@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
-const lightBlue = "#cce4ff";
+const lightBlue = "#4169E1";
 const white = "#ffffff";
 
 const chapters = [
