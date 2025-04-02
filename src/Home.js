@@ -18,7 +18,7 @@ export default function Home() {
   const router = useRouter();
   return (
     <div style={{ minHeight: '100vh', backgroundColor: lightBlue, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '1rem', color: white }}>
-      <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '2rem' }}>أسئلة كيميائية للصف الثالث الثانوي</h1>
+      <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '2rem' }}> ( أسئلة كيميائية للصف الثالث الثانوي الباب الاول( 100 نظري و 100 عملي - الباب الثاني 100 نظري و 100 عملي - الباب الثالث 70 نظري و 70 عملي - الباب الرابع 37 نظري و 37 عملي - الباب الخامس 35 نظري و 35 عملي   </h1>
       <button style={{ fontSize: '1.25rem', padding: '1rem 2rem', borderRadius: '1rem', backgroundColor: white, color: '#0070f3', fontWeight: 'bold', cursor: 'pointer' }} onClick={() => router.push("/chapters")}>
         اضغط هنا لبدء الأسئلة
       </button>
